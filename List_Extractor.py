@@ -9,15 +9,15 @@ import pandas as pd
 import networkx as nx
 # import matplotlib.pyplot as plt
 
-
+csv_file_name = "BIOGRID-ALL-4.4.239.tab3.txt"
 human_ID = 9606
 interaction_of_interest = "physical"
 Protein_A_identifier = "Entrez Gene Interactor A"
 Protein_B_identifier = "Entrez Gene Interactor B"
 
 
-complete_interactome = pd.read_csv("BIOGRID-ALL-4.4.239.tab3.txt", 
-                                   delimiter='\t')
+complete_interactome = pd.read_csv(csv_file_name, delimiter='\t')
+
 human_interactome = complete_interactome[
     (complete_interactome["Organism ID Interactor A"] == human_ID)
     & (complete_interactome["Organism ID Interactor B"] == human_ID)]
