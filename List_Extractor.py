@@ -108,3 +108,26 @@ nx.draw(Graph_of_disease_interactome)
 # Yes, definitely with this new version we don't have self loops no more
 
 
+#%% Central Measures of the Graph
+Degrees_disease_interactome = dict(Graph_of_disease_interactome.degree())
+type(Degrees_disease_interactome)
+Degrees_disease_interactome_sorted = sorted(Degrees_disease_interactome.items(),
+                                                 key=lambda x: x[1], reverse=True)
+Seed_genes_Sorted_by_degree = [Generic_sorted_Seed[0] for 
+                               Generic_sorted_Seed in Degrees_disease_interactome_sorted]
+
+Betweenness_disease_interactome = nx.betweenness_centrality(
+    Graph_of_disease_interactome)
+Eig_Centrality_disease_interactome = nx.eigenvector_centrality(
+    Graph_of_disease_interactome)
+Collection_of_Centrality_Measures = [(Seed,
+                                      Degrees_disease_interactome[Seed],
+                                      Betweenness_disease_interactome[Seed],
+                                      Eig_Centrality_disease_interactome[Seed]) 
+                                      for Seed in Seed_genes_Sorted_by_degree]
+print(Collection_of_Centrality_Measures[:5])
+# OK, it should work. We have to produce a good visualization of the list produced
+# Also we can optimize all by writing a function or a class,
+# that do all this stuff (if we want)
+
+
