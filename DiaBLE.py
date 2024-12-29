@@ -319,7 +319,7 @@ def diable_iteration_of_first_X_nodes(G, S, X, alpha):
     
     N = len(Diable_Universe)
     i = 0
-    
+    list_OF_DiaBLE_Universe_expansion = []
     
     # ------------------------------------------------------------------
     #
@@ -353,8 +353,9 @@ def diable_iteration_of_first_X_nodes(G, S, X, alpha):
         
         i += 1
         if len(Diable_Universe) != N:
-            print(len(Diable_Universe))
-            print(f"DiaBLE Universe expanse itself at the {i}-th iteration\n")
+            # print(len(Diable_Universe))
+            # print(f"DiaBLE Universe expanse itself at the {i}-th iteration\n")
+            list_OF_DiaBLE_Universe_expansion.append((len(Diable_Universe), i))
             
         N = len(Diable_Universe)
         N += (1-alpha)*s0
@@ -418,8 +419,9 @@ def diable_iteration_of_first_X_nodes(G, S, X, alpha):
         
         # GraphVisualizerForDiable(G, cluster_nodes, 
         #                          not_in_cluster, Diable_Universe)
-            
-        
+    
+    print(list_OF_DiaBLE_Universe_expansion)
+    
     return added_nodes
 
 
