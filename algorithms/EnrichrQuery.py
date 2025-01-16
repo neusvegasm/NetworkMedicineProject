@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jan  4 21:23:44 2025
-
-@author: atara
-"""
 
 import requests
 import pandas as pd

@@ -24,7 +24,7 @@ import scipy.stats
 from collections import defaultdict
 import csv
 import sys
-from EnrichrQuery import Compute_Enrichment_Weigts
+from algorithms.EnrichrQuery import Compute_Enrichment_Weigts
 import pickle
 import os
 
