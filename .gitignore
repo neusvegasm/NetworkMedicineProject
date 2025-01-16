@@ -1,0 +1,7 @@
+.idea/
+venv/
+data/BIOGRID-ORGANISM-Homo_sapiens-4.4.240.tab3.txt
+data/PPI_of_interest_corrected updated
+data/DISEASES_Summary_GDA_CURATED_C0025202.tsv
+data/hgnc-symbol-check_Melanoma_SeedGenes.xlsx - hgnc-symbol-check_Melanoma_Seed.csv
+data/seed_genes.txt
