@@ -73,6 +73,7 @@ This repository provides a comprehensive framework for inferring putative diseas
 
 2. **Gather Gene-Disease Associations (GDAs)**:
    - Use the file `DISEASES_Summary_GDA_CURATED_C0025202.tsv` from DisGeNet.
+   - Save the file in the `data/` directory.
 
 3. **Preprocess Data**:
    - Run `1-ListExtractor.ipynb` to prepare data for constructing the PPI graph.
