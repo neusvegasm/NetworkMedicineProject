@@ -28,7 +28,7 @@ This repository provides a comprehensive framework for inferring putative diseas
 - **3-GDA.ipynb**  
   Performs Gene-Disease Association (GDA) analysis.
 
-- **4-Inference.ipynb**  
+- **4-Validation.ipynb**  
   Evaluates and compares the performance of different inference algorithms.
 
 - **5-GeneInference.ipynb**  
