@@ -52,14 +52,14 @@ This repository provides a comprehensive framework for inferring putative diseas
 ## Getting Started
 
 ### Prerequisites
-- Python 3.8 or higher
+- Python 3.7 or higher
 - Required Python libraries listed in `requirements.txt`
 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/repository-name.git
-   cd repository-name
+   git clone https://github.com/neusvegasm/NetworkMedicineProject.git
+   cd NetworkMedicineProject
    ```
 2. Install dependencies
    ```bash
@@ -72,8 +72,7 @@ This repository provides a comprehensive framework for inferring putative diseas
    - Save the file in the `data/` directory.
 
 2. **Gather Gene-Disease Associations (GDAs)**:
-   - Use the provided file `DISEASES_Summary_GDA_CURATED_<id>.tsv`.
-   - If additional GDAs are needed, ensure compliance with licensing terms (e.g., DisGeNet).
+   - Use the file `DISEASES_Summary_GDA_CURATED_C0025202.tsv` from DisGeNet.
 
 3. **Preprocess Data**:
    - Run `1-ListExtractor.ipynb` to prepare data for constructing the PPI graph.
